@@ -4,52 +4,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="style.css">
     <title>HTML 2</title>
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav class="navbar">
             <ul>
-                <li>Menu</li>
+                <li class="menu"><i class="fa-solid fa-bars" style="color: #000000;"></i> MENU <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
+                </li>
+
                 <img src="information.jpg" alt="">
                 <form>
-                    <button>Log Ind</button>
+                    <button>Log Ind <i class="fa-solid fa-user" style="color: #000000;"></i></button>
                 </form>
             </ul>
         </nav>
 
     </header>
 
-    <div>
+    <div class="undernav">
         <ul>
             <li>Nyhedsbreve</li>
             <li>Podcast</li>
-            <li>Køb Abonnement</li>
+            <li class="red">Køb Abonnement</li>
         </ul>
+        
     </div>
-
+    
     <main>
+    
+    <img class="greybox" src="image.jpg" alt="">
+
         <section>
             <article>
-                <div>Abonnement <span>Læsetid: 7 MIN.</span></div>
+                <div class="starttext">
+                    <p>Abonnement</p><span class="greyread">Læsetid: 7 MIN.</span>
+                </div>
 
                 <div>
                     <h1>Gas er et godt politisk våben. Det er bare ikke Putin, der bruger det</h1>
-                    <p>Nogle EU-lande frygter, at Rusland kan bruge Nord Stream 2 som politisk våben mod Europa. Men i
+                    <p class="greyp">Nogle EU-lande frygter, at Rusland kan bruge Nord Stream 2 som politisk våben mod Europa. Men i
                         virkeligheden er det omvendt, mener firmaerne bag rørledningen: Det er EU, der bruger gassen som
                         våben
                         over for Putin. Information har været på charmetur med den russiske gas' europæiske venner</p>
                 </div>
 
-                <div>
-                    <div>
-                        <img src="bordbillede.webp" alt="">
-                    </div>
-                    <p>Rusland vil ikke bruge gasrørledningen, Nord Stream 2, som politisk våben, lyder det fra folkene
+                <div class="midtenflex">
+                         <p>Rusland vil ikke bruge gasrørledningen, Nord Stream 2, som politisk våben, lyder det fra folkene
                         bag projektet. Rørledningen koster 70 mia. kr. og vil sende 55 mia. kubikmeter gas ind i Europa
-                        om året.</p>
-                    <p>Peter Nygaard Christensen</p>
+                        om året.</p> 
+                        <p><i class="fa-solid fa-camera" style="color: #787878;"></i>Peter Nygaard Christensen</p>
+                    <div>
+                        <img class="bordbillede" src="bordbillede.webp" alt="">
+                       
+                    </div>
+                    
                 </div>
             </article>
 
@@ -59,33 +72,34 @@
             </div>
 
             <article>
-                <div>
-                    <p>Udland</p>
-                    <p>7. maj 2018</p>
-                    <p>Kommentarer (2)</p>
+                <div class="infoflexfirst">
+                    <p class="red">Udland</p>
+                    <p class="lineone"><i class="fa-regular fa-clock" style="color: #d4d3d2;"></i>7. maj 2018</p>
+                    <p class="lineone"><i class="fa-solid fa-comments" style="color: #cccccc;"></i>Kommentarer (2)</p>
+                    <p></p>
                 </div>
 
-                <div>
+                <div class="ptextinfo">
                     <p>»Jeg tænker, at vi lige taler os varme sammen, før vi begynder på interviewet,« siger Jens
                         Müller, talsperson for det russiske gasfirma Nord Stream 2 AG. Vi sidder en gruppe journalister
                         i en bus på vej til en gasterminal i Rotterdam, inviteret af folkene bag den kommende russiske
                         gasrørledning, Nord Stream 2 (NS2), der efter planen skal krydse dansk farvand.</p>
                 </div>
 
-                <div>
-                    <div>
+                <div class="Medieflex">
+                    <div class="Medier">
                         <img src="" alt="">
-                        <p>Del</p>
+                        <p class="Facebook gap"><i class="fa-brands fa-square-facebook" style="color: #ffffff;"></i>DEL</p>
                     </div>
 
                     <div>
                         <img src="" alt="">
-                        <p>Tweet</p>
+                        <p class="Twitter gap"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i>TWEET</p>
                     </div>
 
                     <div>
                         <img src="" alt="">
-                        <p>Email</p>
+                        <p class="Email gap"><i class="fa-solid fa-at" style="color: #ffffff;"></i>EMAIL</p>
                     </div>
 
                 </div>
@@ -94,12 +108,12 @@
 
             <article>
 
-                <div>
-                    <h1>Vores abonnenter kalder os kritisk, seriøs og troværdig. Se om du er enig...</h1>
+                <div class="midtenlogin">
+                    <p>Vores abonnenter kalder os kritisk, seriøs og troværdig. Se om du er enig...</p>
                     <form>
                         <button>KLIK HER</button>
                     </form>
-                    <p>Allerede abonnent?<a href="">Log ind her</a></p>
+                    <p class="logintekst">Allerede abonnent?<a href="">Log ind her</a></p>
 
                 </div>
 
@@ -107,111 +121,111 @@
 
         </section>
 
-        <section>
+        
             <article>
-                <div>
-                    <h1>Fik du læst?</h1>
-                    <p>pil <span>pil</span></p>
+                <div class="didyouread">
+                    <p>Fik du læst?     <i class="fa-regular fa-compass" style="color: #d8d8d9;"></i></p>
+                    <p><i class="fa-solid fa-circle-arrow-left" style="color: #cccccc;"></i><span><i class="fa-solid fa-circle-arrow-right" style="color: #cccccc;"></i></span></p>
 
                 </div>
             </article>
-
+            
+            <section class="firstcolumns">
             <article>
-                <img src="Grey-Box.jpeg" alt="">
+                <img src="Grey-Box.jpeg" width="250px" alt="">
                 <p>Alternativ forbrødring, eller hvordan jeg lærte at holde op med at bekymre mig og elske jazzhænder
                 </p>
             </article>
 
             <article>
-                <img src="Grey-Box.jpeg" alt="">
+                <img src="Grey-Box.jpeg" width="250px" alt="">
                 <p>»Jeg måtte ud på det dybe vand for at nå til et nyt land«</p>
             </article>
 
             <article>
-                <img src="Grey-Box.jpeg" alt="">
+                <img src="Grey-Box.jpeg" width="250px" alt="">
                 <p>Iceage lever stadig op til den hype, de opnåede, inden de var gamle nok til at flytte hjemmefra</p>
             </article>
 
             <article>
-                <img src="Grey-Box.jpeg" alt="">
+                <img src="Grey-Box.jpeg" width="250px" alt="">
                 <p>Under normale forhold ville Trumps skandaleramte miljøchef forlængst være blevet bortvist</p>
             </article>
+            </section>
+            <article>
+                <div class="underflex">
+                    <p class="snyt">Seneste nyt</p>
+                    <p class="snyt">Information.dk</p>
+                </div>
+            </article>
+            <p><i class="fa-solid fa-house" style="color: #cccccc;"></i> Forsiden lige nu</p>
+            <article>
+                <div class="line">
+                    <p class="greytime">16:36</p>
+                    <p class="listwidth">Slut med møntbetaling i københavnske p-automater</p>
+                </div>
 
+                <div class="line">
+                    <p class="greytime">16:26</p>
+                    <p class="listwidth">Energiminister: Afgift på biomasse er forkert vej at gå</p>
+                </div>
+
+                <div class="line">
+                    <p class="greytime">15:45</p>
+                    <p class="listwidth">Libanesisk premierministers parti går en tredjedel tilbage</p>
+                </div>
+
+                <div class="line">
+                    <p class="greytime">15:10</p>
+                    <p class="listwidth">Ombudsmand: Offentligheden må se kronprinsens IOC-breve</p>
+                </div>
+
+                <div class="line">
+                    <p class="greytime">15:02</p>
+                    <p class="listwidth">WWF: Vildsvinehegn skader andre dyrearter i grænselandet</p>
+                </div>
+
+                <div class="line">
+                    <p class="greytime">14:46</p>
+                    <p class="listwidth">Atomaftale med Iran fortsætter også uden USA</p>
+                    <p>Flere nyheder ></p>
+                </div>
+            </article>
+        
+
+        <section class="secondcolumns">
+            
             <article>
                 <div>
-                    <p>Seneste nyt</p>
-                    <p>Information.dk</p>
+                    <p class="redabonnement">ABONNEMENT</p>
                 </div>
+                <img src="Grey-Box.jpeg" width="250px" alt="">
+                <p>Gas er et godt politisk våben. Det er bare ikke Putin, der bruger det</p>
+
+            </article>
+            <article>
+                <img src="Grey-Box.jpeg" width="250px" alt="">
+                <p>Mand dig op, kvinde!</p>
             </article>
 
             <article>
-                <div>
-                    <p>16:36</p>
-                    <h1>Slut med møntbetaling i københavnske p-automater</h1>
-                </div>
-
-                <div>
-                    <p>16:26</p>
-                    <h1>Energiminister: Afgift på biomasse er forkert vej at gå</h1>
-                </div>
-
-                <div>
-                    <p>15:45</p>
-                    <h1>Libanesisk premierministers parti går en tredjedel tilbage</h1>
-                </div>
-
-                <div>
-                    <p>15:10</p>
-                    <h1>Ombudsmand: Offentligheden må se kronprinsens IOC-breve</h1>
-                </div>
-
-                <div>
-                    <p>15:02</p>
-                    <h1>WWF: Vildsvinehegn skader andre dyrearter i grænselandet</h1>
-                </div>
-
-                <div>
-                    <p>14:46</p>
-                    <h1>Atomaftale med Iran fortsætter også uden USA</h1>
-                    <p>Flere nyheder</p>
-                </div>
-            </article>
-        </section>
-
-        <section>
-            <h1>Forsiden lige nu</h1>
-            <article>
-                <div>
-                    <p>Abonnement</p>
-                </div>
-                <img src="Grey-Box.jpeg" alt="">
-                <h1>Gas er et godt politisk våben. Det er bare ikke Putin, der bruger det</h1>
-
-            </article>
-
-            <article>
-                <img src="Grey-Box.jpeg" alt="">
-                <h1>Mand dig op, kvinde!</h1>
-            </article>
-
-            <article>
-                <h1>Peter Madsen anker kun længden af sin straf</h1>
+                <p>Peter Madsen anker kun længden af sin straf</p>
                 <p>Ankesagen mod Peter Madsen kommer kun til at handle om, hvilken straf han skal have</p>
             </article>
 
             <article>
                 <div>
-                    <p>Abonnement</p>
+                    <p class="redabonnement">ABONNEMENT</p>
                 </div>
-                <img src="Grey-Box.jpeg" alt="">
-                <h1>Rapport af norsk regeringskommission skaber tvivl om lovligheden af FE's masseovervågning</h1>
+                <img src="Grey-Box.jpeg" width="250px" alt="">
+                <p>Rapport af norsk regeringskommission skaber tvivl om lovligheden af FE's masseovervågning</p>
             </article>
 
             <article>
                 <div>
-                    <p>Abonnement</p>
+                    <p class="redabonnement">ABONNEMENT</p>
                 </div>
-                <h1>Sådan håndteres offentlige arbejdskonflikter i Sverige og Norge</h1>
+                <p>Sådan håndteres offentlige arbejdskonflikter i Sverige og Norge</p>
                 <p>Den ellers højtbesungne danske model skal revideres, hvis det står til Socialdemokratiets formand,
                     Mette Frederiksen. Information skitsere i anledning overenskomstmodellerne hos vores nordiske
                     søsternationer. Men måske behøver vi slet ikke se ud over landets grænser for at finde inspiration
@@ -220,24 +234,24 @@
 
             <article>
                 <div>
-                    <p>Abonnement</p>
+                    <p class="redabonnement">ABONNEMENT</p>
                 </div>
-                <img src="Grey-Box.jpeg" alt="">
-                <h1>440.000 syrere er vendt tilbage, selv om krigen fortsætter. Vi har fulgt en af dem</h1>
+                <img src="Grey-Box.jpeg" width="250px" alt="">
+                <p>440.000 syrere er vendt tilbage, selv om krigen fortsætter. Vi har fulgt en af dem</p>
             </article>
         </section>
 
         <section>
-            <div>
-                <p>Anbefalinger</p>
-                <p>Kommentarer</p>
+            <div class="aflex">
+                <p class="anbefalinger">Anbefalinger</p>
+                <p class="comment">Kommentarer</p>
             </div>
-            <article>
+            <article class="commentflex">
                 <div>
-                    <p>Anbefal artikel</p>
-                    <img src="" alt="">
-                    <h1>Henrik holm hansen</h1>
-                    <p>07. maj, 2018 - 05:56</p>
+                    <p class="aover">Anbefal artikel</p>
+                    <img src="profil.png" width="100px" alt="">
+                    <p class="name">Henrik holm hansen</p>
+                    <p class="date">07. maj, 2018 - 05:56</p>
                 </div>
 
                 <div>
@@ -245,13 +259,13 @@
                         ikke politikerne og måske specielt EU ikke bruger muligheden aktivt til at presse endsige
                         fortællte PUTIN at ruslands opførsel i Ukraine ikke kan accepteres kommer der ikke penge i
                         kassen kan oligarkerne ikke fodres!</p>
-                    <p>Anbefal kommentar</p>
+                    <p class="underinfo kommentar">Anbefal kommentar</p>
                 </div>
 
                 <div>
-                    <img src="" alt="">
-                    <h1>Gert Romme</h1>
-                    <p>07. maj, 2018 - 17:08</p>
+                    <img src="profil.png" width="100px" alt="">
+                    <p class="name">Gert Romme</p>
+                    <p class="">07. maj, 2018 - 17:08</p>
                 </div>
 
                 <div>
@@ -268,8 +282,8 @@
                         (Russia Today), der er Vladimir Putins personlige propaganda-kanal der også sikrer "det frie
                         ord" i verden. Det så ud til, det var meget vigtigt for Putin og RT, for der var hele tiden
                         fokus på en tidligere Hr. Schröder.</p>
-                    <p>Anbefal kommentar</p>
-                    <p>Du skal være registreret bruger for at kommentere. <strong>Log ind</strong> eller <strong>opret
+                    <p class="kommentar">Anbefal kommentar</p>
+                    <p class="logininfo">Du skal være registreret bruger for at kommentere. <strong>Log ind</strong> eller <strong>opret
                             bruger»</strong></p>
                 </div>
             </article>
@@ -277,30 +291,30 @@
     </main>
 
     <footer>
-        <article>
-            <h1>Information om E-avis</h1>
+        <article class="footerover">
+            <p class="overskrift">Information om E-avis</p>
             <p>Du kan læse Information, lige som du vil. På din mobil, tablet eller computer - og helt ude i skoven</p>
         </article>
-
+        
         <article>
-            <p>Læs e-avisen på din computer</p>
-            <p>Download til Apple</p>
-            <p>Download til Android</p>
-            <h1>Følg avisen</h1>
-            <p>Nyhedsbreve</p>
-            <p>Facebook</p>
-            <p>Twitter</p>
-            <p>RSS</p>
+            <p><i class="fa-solid fa-desktop" style="color: #454545;"></i>Læs e-avisen på din computer</p>
+            <p><i class="fa-brands fa-apple" style="color: #454545;"></i>Download til Apple</p>
+            <p><i class="fa-brands fa-android" style="color: #454545;"></i>Download til Android</p>
+            <p class="overskrift">Følg avisen</p>
+            <p><i class="fa-regular fa-envelope" style="color: #454545;"></i>Nyhedsbreve</p>
+            <p><i class="fa-brands fa-facebook-f" style="color: #454545;"></i>Facebook</p>
+            <p><i class="fa-brands fa-twitter" style="color: #454545;"></i>Twitter</p>
+            <p><i class="fa-solid fa-wifi fa-rotate-by" style="color: #454545; --fa-rotate-angle: 45deg;"></i>RSS</p>
         </article>
 
         <article>
             <img src="Grey-Box.jpeg" alt="">
-            <h1>Information hver morgen</h1>
+            <p class="overskrift">Information hver morgen</p>
             <form>
-                <input type="text" placeholder="Skriv din email her" id="">
-                <button>Tilmeld</button>
+                <input type="text" placeholder="Skriv din email her" id="email">
+                <button class="tilmeld">Tilmeld</button>
             </form>
-            <h1>Køb avisen</h1>
+            <p class="overskrift">Køb avisen</p>
             <p>Få et godt tilbud</p>
             <p>Abonnement - selvbetjening</p>
             <p>Abonnementsbetingelser</p>
@@ -309,7 +323,7 @@
         </article>
 
         <article>
-            <h1>Om Information</h1>
+            <p class="overskrift">Om Information</p>
             <p>Redaktion</p>
             <p>iBureauet</p>
             <p>Besøg Butikken</p>
@@ -324,7 +338,7 @@
                 Telefon 3369 6000 | CVR: 63058416</p>
             <p>Privatspolitik | Cookies | Annocering</p>
             <form>
-                <button>Skriv til os</button>
+                <button class="skriv">Skriv til os</button>
             </form>
         </article>
     </footer>
